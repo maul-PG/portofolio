@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Background dengan gradient menarik */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Container utama */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 3.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out;
+}
+
+h1 span {
+    color: #2575fc;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigasi */
+nav {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #2575fc;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    margin: 40px 0;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Menambahkan blur efek pada background */
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Highlight Text */
+strong {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effects */
+section p:hover {
+    color: #4CAF50;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
