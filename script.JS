@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   var password = document.getElementById('password').value;
 
   // Cek jika login berhasil (untuk contoh ini, username dan password harus "admin")
-  if (username === "admin" && password === "admin123") {
+  if (username === "admin" && password === "adminku") {
       // Redirect ke halaman portofolio jika login berhasil
       window.location.href = "portofolio.html";
   } else {
